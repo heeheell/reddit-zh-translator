@@ -55,6 +55,3 @@ Reddit 改了 DOM 第一步：在 PDP composer 焦点状态下跑 `document.acti
 - **Shreddit DOM 改版**：选择器表在 `src/content/shreddit.ts` 顶部集中维护。
 - **GPT-5 reasoning 系列拒收 `temperature`**：`provider.skipTemperatureFor` 配置表（默认含 `nano` / `o1` / `o3` / `o4`），命中即不传该字段。
 
-## 完整设计
-
-`/Users/xbinao/.claude/plans/3-reddit-llm-api-reddit-bubbly-wilkes.md`

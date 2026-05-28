@@ -104,10 +104,6 @@ PR 欢迎，但优先级是"修腐烂的 selectors"——Reddit 改 Shreddit web
 
 新功能/v2 想法见项目 issues 或 `CLAUDE.md` 末尾的 v2 候选清单。
 
-## 设计文档
-
-完整设计 + 反复审计迭代记录在 `/Users/xbinao/.claude/plans/3-reddit-llm-api-reddit-bubbly-wilkes.md`（本地路径，没放进 repo）。开发踩坑笔记在 `CLAUDE.md`。
-
 ## License
 
 MIT
