@@ -12,10 +12,6 @@
 - 多 LLM provider 抽象，支持 Vercel AI Gateway / OpenAI / DeepSeek / OpenRouter / 自填端点（OpenAI-compatible）
 - 自用本地扩展，无后端，API key 存浏览器本地
 
-## 截图
-
-> （留位置：装好扩展后跑一遍，截两张图——feed 的双语对照 + 回帖候选面板——传到 `docs/` 里替换这两行）
-
 ## 装载
 
 不打算上 Chrome Web Store（自用为主，且 `optional_host_permissions: ["*://*/*"]` 会触发审核问题）。**开发者模式加载已解压**即可：
