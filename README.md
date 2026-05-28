@@ -12,6 +12,18 @@
 - 多 LLM provider 抽象，支持 Vercel AI Gateway / OpenAI / DeepSeek / OpenRouter / 自填端点（OpenAI-compatible）
 - 自用本地扩展，无后端，API key 存浏览器本地
 
+## 缘起
+
+自用工具。英文不太好但又想逛 Reddit——读帖子吃力、回帖怕翻车、想攒点 karma 但语言门槛实打实地挡着。
+
+试过的翻译工具几个共同痛点：
+
+- **每次都要点**：网页选词翻译刷一屏要点几十下，太累
+- **缺上下文**：通用翻译不懂 sub 文化——"tendies" 在 r/wallstreetbets 是"收益"，被直翻成"鸡块"；"this guy" 不解出指代成了空泛的"这个家伙"
+- **只能单向**：英→中可以，但**中→英 + 风格匹配**这件事现有工具都不做——没法让我用中文起草、再让它转成像本地 Redditor 写的英文
+
+所以用 Claude Code 撸了这个，专门解决以上三件事。自用为主，开源放这里给同样情况的人参考，不打算上 Chrome Web Store。
+
 ## 装载
 
 不打算上 Chrome Web Store（自用为主，且 `optional_host_permissions: ["*://*/*"]` 会触发审核问题）。**开发者模式加载已解压**即可：
