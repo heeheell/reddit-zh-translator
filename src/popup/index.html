@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit ZH</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <h1>Reddit ZH Translator</h1>
+
+    <section>
+      <label for="provider">Provider</label>
+      <select id="provider"></select>
+    </section>
+
+    <section>
+      <label for="baseurl">Base URL</label>
+      <input id="baseurl" type="text" placeholder="https://api.example.com/v1" />
+    </section>
+
+    <section>
+      <label for="apikey">API Key</label>
+      <div class="row">
+        <input id="apikey" type="password" placeholder="sk-..." />
+        <button id="show-key" type="button" title="显示/隐藏">👁</button>
+      </div>
+      <div class="row">
+        <button id="save-key" type="button">保存并测试</button>
+        <span id="key-status"></span>
+      </div>
+    </section>
+
+    <section>
+      <label for="model-translate">翻译模型</label>
+      <input id="model-translate" type="text" list="dl-translate" />
+      <datalist id="dl-translate"></datalist>
+    </section>
+
+    <section>
+      <label for="model-reply">回帖模型</label>
+      <input id="model-reply" type="text" list="dl-reply" />
+      <datalist id="dl-reply"></datalist>
+    </section>
+
+    <section>
+      <label class="checkbox">
+        <input id="auto-translate" type="checkbox" />
+        自动翻译（关闭时清除页面已注入译文）
+      </label>
+    </section>
+
+    <section>
+      <label for="budget">本会话 Token 预算</label>
+      <input id="budget" type="number" min="0" step="1000" />
+      <div class="hint">预算 = 本会话输入 token + 输出 token 累计上限。手动重翻也计入预算。</div>
+    </section>
+
+    <section class="stats">
+      <h2>会话统计</h2>
+      <div id="stats">读取中…</div>
+      <button id="reset-stats" type="button">重置计数</button>
+    </section>
+
+    <footer>
+      翻译内容将通过 HTTPS 发送到当前 Provider。本扩展不收集、不上报任何数据。
+    </footer>
+
+    <script type="module" src="./popup.ts"></script>
+  </body>
+</html>

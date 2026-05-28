@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#FF4500"/>
+  <text x="64" y="64"
+        font-family="-apple-system, 'PingFang SC', 'Noto Sans CJK SC', sans-serif"
+        font-weight="900"
+        font-size="84"
+        fill="white"
+        text-anchor="middle"
+        dominant-baseline="central">译</text>
+  <circle cx="100" cy="100" r="14" fill="white"/>
+  <text x="100" y="100"
+        font-family="-apple-system, sans-serif"
+        font-weight="800"
+        font-size="14"
+        fill="#FF4500"
+        text-anchor="middle"
+        dominant-baseline="central">EN</text>
+</svg>

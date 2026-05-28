@@ -1,0 +1,165 @@
+.rzt-translation {
+  border-left: 2px solid #888;
+  padding: 4px 8px;
+  margin: 6px 0;
+  font-size: 0.92em;
+  color: #6b6b6b;
+  line-height: 1.5;
+}
+.rzt-translation.rzt-error .rzt-text {
+  color: #c0392b;
+}
+.rzt-badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background: #d4a017;
+  color: white;
+  margin-right: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+.rzt-translation.rzt-error .rzt-badge {
+  background: #c0392b;
+}
+.rzt-text {
+  color: inherit;
+}
+.rzt-meta {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.85em;
+  color: #9aa0a6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .rzt-translation {
+    color: #a8a8a8;
+    border-left-color: #666;
+  }
+  .rzt-meta {
+    color: #777;
+  }
+}
+html.theme-dark .rzt-translation,
+[data-mode='dark'] .rzt-translation {
+  color: #a8a8a8;
+  border-left-color: #666;
+}
+
+#rzt-chip {
+  background: #d4a017;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#rzt-panel {
+  background: white;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+@media (prefers-color-scheme: dark) {
+  #rzt-panel {
+    background: #1a1a1b;
+    color: #d7dadc;
+    border-color: #343536;
+  }
+}
+.rzt-card {
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+}
+.rzt-card:first-child {
+  border-top: none;
+}
+@media (prefers-color-scheme: dark) {
+  .rzt-card {
+    border-top-color: #343536;
+  }
+}
+.rzt-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.rzt-card-label {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #4c6391;
+  color: white;
+  font-weight: 600;
+}
+.rzt-card-use,
+.rzt-card-copy {
+  margin-left: auto;
+  background: #4c6391;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.rzt-card-copy {
+  margin-left: 4px;
+  background: #6c7787;
+}
+.rzt-card-text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+.rzt-panel-close {
+  margin-top: 8px;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.rzt-raw {
+  background: #f4f4f4;
+  padding: 6px 8px;
+  border-radius: 3px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 6px 0;
+}
+@media (prefers-color-scheme: dark) {
+  .rzt-raw {
+    background: #2a2a2b;
+  }
+}
+
+#rzt-budget-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000000;
+  background: #c0392b;
+  color: white;
+  padding: 8px 16px;
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  text-align: center;
+}
