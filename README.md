@@ -1,5 +1,9 @@
 # Reddit ZH Translator
 
+[![CI](https://github.com/heeheell/reddit-zh-translator/actions/workflows/ci.yml/badge.svg)](https://github.com/heeheell/reddit-zh-translator/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/heeheell/reddit-zh-translator)](https://github.com/heeheell/reddit-zh-translator/releases/latest)
+
 一个把 Reddit 翻译成中文 + 把中文回帖转成符合社区文化的英文的 Chrome 扩展。
 
 - 滚到视野的英文（以及其它非中文）帖子/评论 → 自动翻成中文，双语对照展示
